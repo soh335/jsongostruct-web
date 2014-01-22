@@ -1,0 +1,18 @@
+{
+	"ImportPath": "github.com/soh335/jsongostruct-web",
+	"GoVersion": "go1.2",
+	"Deps": [
+		{
+			"ImportPath": "github.com/gorilla/context",
+			"Rev": "a08edd30ad9e104612741163dc087a613829a23c"
+		},
+		{
+			"ImportPath": "github.com/gorilla/mux",
+			"Rev": "9ede152210fa25c1377d33e867cb828c19316445"
+		},
+		{
+			"ImportPath": "github.com/soh335/jsongostruct/converter",
+			"Rev": "8888a2b0ff5ae51eefc1b4af64c992223d7fe495"
+		}
+	]
+}
