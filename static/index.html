@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/angular.min.js"></script>
+    <script src="./js/app.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+  </head>
+  <body ng-app="JsonGoStruct">
+    <div class="container">
+      <h1>jsongostruct</h1>
+      <p>jsongostruct is yet another site (original is <a href="http://mholt.github.io/json-to-go/">JSON-to-Go</a>) for generating go struct from json.</p>
+      <p></p>
+      <div ng-controller="FormCtrl">
+        <div class="alert alert-warning" ng-if="form.alert">{{form.alert}}</div>
+        <div class="row form-group">
+          <label for="" class="col-md-2 control-label">fieldName</label>
+          <input type="" class="col-md-4" id="" placeholder="FieldName" ng-model="form.name" required>
+          <button type="button" class="btn btn-default col-md-offset-5 col-md-1" ng-click="generate(form)">generate</button>
+        </div>
+        <div class="row form-group has-warning">
+          <textarea class="col-xs-12 col-md-6" rows="20" ng-model="form.json"></textarea>
+          <pre class="col-xs-12 col-md-6" ng-model="structField">{{form.struct}}</pre>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <ul class="list-inline">
+          <li><a href="https://github.com/soh335">soh335</a></li>
+          <li><a href="https://github.com/soh335/jsongostruct">jsongostruct</a></li>
+          <li><a href="https://github.com/soh335/jsongostruct-web">jsongostruct-web</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
