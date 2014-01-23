@@ -1,1 +1,1 @@
-web: ./jsongostruct-web
+web: jsongostruct-web
