@@ -29,7 +29,7 @@ func errorHandler(handler func(res http.ResponseWriter, req *http.Request) error
 		}
 		switch err {
 		default:
-			http.Error(res, "Internal Server Error", http.StatusInternalServerError)
+			http.Error(res, "oops", http.StatusInternalServerError)
 		}
 	}
 }
