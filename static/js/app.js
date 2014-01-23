@@ -1,6 +1,7 @@
 angular.module('JsonGoStruct', [])
     .controller('FormCtrl', function($scope, $http) {
         $scope.form = {};
+        $scope.form.name = "Sample";
         $scope.form.json = JSON.stringify(
             {
                 "url": "http://example.com",
