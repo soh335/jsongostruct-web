@@ -3,7 +3,18 @@ angular.module('JsonGoStruct', [])
         $scope.form = {};
         $scope.form.json = JSON.stringify(
             {
-                "hoge": "fuga"
+                "url": "http://example.com",
+                "id": 12345,
+                "name": "web",
+                "bool": true,
+                "array": [
+                    "foo",
+                    "bar"
+                ],
+                "map": {
+                    "foo": "bar",
+                    "dameleon": "dame"
+                }
             },
             null,
             "    "
