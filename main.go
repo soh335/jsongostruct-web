@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"github.com/gorilla/mux"
-	"github.com/soh335/jsongostruct/converter"
+	"github.com/soh335/jsongostruct/jsongostruct"
 	"log"
 	"net/http"
 	"os"
@@ -44,7 +44,7 @@ func postHandler(res http.ResponseWriter, req *http.Request) error {
 	dec := json.NewDecoder(req.Body)
 	var postData PostData
 	if err := dec.Decode(&postData); err == nil {
-		return converter.JsonGoStruct(bytes.NewReader(postData.Json), res, postData.Name)
+		return jsongostruct.Convert(bytes.NewReader(postData.Json), res, postData.Name)
 	} else {
 		return err
 	}

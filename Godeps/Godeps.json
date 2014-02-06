@@ -11,8 +11,8 @@
 			"Rev": "9ede152210fa25c1377d33e867cb828c19316445"
 		},
 		{
-			"ImportPath": "github.com/soh335/jsongostruct/converter",
-			"Rev": "0fff67e9d0057eeca475f2f8c1f629443b9de438"
+			"ImportPath": "github.com/soh335/jsongostruct/jsongostruct",
+			"Rev": "126c38a050eb7b83d1a80ec104734637b25e421b"
 		}
 	]
 }
